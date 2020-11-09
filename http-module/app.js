@@ -1,7 +1,7 @@
-const http = require('http')
+const http = require('http');
 
 // This server is an EventEmitter
-server = http.createServer((req, res) => {
+const server = http.createServer((req, res) => {
     if (req.url === '/') {
         res.write('Hello World');
         res.end();
