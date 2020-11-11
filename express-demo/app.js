@@ -1,4 +1,5 @@
 const Joi = require('joi');
+const config = require('config')
 const express = require('express');
 const { func } = require('joi');
 
@@ -12,6 +13,11 @@ const courses = [
     { id: 2, name: 'Course2' },
     { id: 3, name: 'Course3' }
 ];
+
+// Configuration
+console.log('Application name: ' + config.get('name'));
+console.log('Mail Server: ' + config.get('mail.host'));
+console.log('Mail Password: ' + config.get('mail.password'));
 
 function validateCourse(course) {
     // Course Schema
