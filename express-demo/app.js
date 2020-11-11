@@ -1,11 +1,11 @@
 const Joi = require('joi');
 const config = require('config')
 const express = require('express');
-const { func } = require('joi');
 
 const app = express();
 
 app.use(express.json());
+
 
 // Dummy Data
 const courses = [
