@@ -9,7 +9,7 @@ app.set('views', './views');
 
 
 app.get('/', (req, res) => {
-    res.render('index', { title: 'My App', message: 'Hello World' })
+    res.render('index', { title: 'My App', message: 'Hello World' });
 });
 
 const port = process.env.PORT || 3000;
